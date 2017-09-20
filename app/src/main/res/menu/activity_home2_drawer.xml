@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Accueil" />
+        <item
+            android:id="@+id/nav_search_activity"
+            android:icon="@drawable/ic_activity2"
+            android:title="Trouver une activité" />
+        <item
+            android:id="@+id/nav_activity"
+            android:icon="@drawable/ic_activity1"
+            android:title="Proposer une activité " />
+    </group>
+
+    <item android:title="Mon compte">
+        <menu>
+            <item
+                android:id="@+id/nav_account"
+                android:icon="@drawable/ic_account"
+                android:title="Mon compte" />
+            <item
+                android:id="@+id/nav_logOut"
+                android:icon="@drawable/ic_logout"
+                android:title="Déconnexion" />
+        </menu>
+    </item>
+
+</menu>

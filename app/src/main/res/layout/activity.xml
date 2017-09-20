@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/r">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+        <include layout="@layout/action_header"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:id="@+id/include" />
+
+
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:background="@drawable/cover_foot"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:padding="10dp"
+            android:background="@drawable/container_radius">
+
+
+
+            <TextView
+                android:id="@+id/activityType"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:textAlignment="center"
+                android:text="Football"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:weightSum="1">
+
+
+
+
+                <TextView
+                    android:id="@+id/lieu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="A Lille "
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=" le "
+                    android:textColor="@color/lightGrey"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12/10/2017"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:weightSum="1">
+
+
+
+
+                <TextView
+                    android:id="@+id/commentaire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel ultricies nisl, nec semper orci. Praesent commodo ex at nisi fringilla finibus. Duis ac venenatis eros, id suscipit libero. Integer nisl nisl, pretium nec turpis at, hendrerit laoreet enim. Pellentesque vel condimentum ipsum. Maecenas vestibulum ante quis eros luctus lacinia. Integer fringilla, nunc vulputate tristique volutpat, dolor erat pellentesque purus, et sodales leo diam quis risus."
+                    android:textSize="12sp"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold" />
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:id="@+id/partipants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Nombre de participants : "
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/lightGrey"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nbrparticipants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="xx"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=" / "
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/lightGrey"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/maxpartipants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="xx"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/lightGrey"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Vous avez bien été enregistré"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:weightSum="1">
+        <Button
+
+            android:id="@+id/subscribe"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_red"
+            android:clickable="true"
+            android:text="Participer"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

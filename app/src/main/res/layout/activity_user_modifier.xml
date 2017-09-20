@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:id="@+id/r">
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" />">
+
+
+    <!--  Container image du haut -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:scaleType = "centerCrop"
+            android:gravity="center_horizontal"
+            >
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="@drawable/profil"
+                android:layout_marginTop="40dp"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <!--  Container contenu du compte -->
+
+    <LinearLayout
+
+        android:padding="10dp"
+        android:paddingTop="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <!--  Container ligne info compte -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewMail"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Mail :"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/Mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E mail"
+                android:textSize="14dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/veryLightGrey"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewDdn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Date de naissance :"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/textViewDDdn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date de naissance"
+                android:textSize="14dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/veryLightGrey"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewPseudo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Pseudo :"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/textViewPPseudo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pseudo"
+                android:textSize="14dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/veryLightGrey"/>
+
+        <!-- <LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             tools:layout_editor_absoluteY="0dp"
+             tools:layout_editor_absoluteX="0dp">
+             <TextView
+                 android:id="@+id/textViewSexe"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Sexe :"
+                 android:padding="10dp"/>
+
+             <TextView
+                 android:id="@+id/textViewSsexe"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:hint="Sexe"
+                 android:textAlignment="textEnd" />
+         </LinearLayout>-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewVille"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Ville :"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/textViewVVille"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ville"
+                android:textSize="14dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/veryLightGrey"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewCP"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Code postal :"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/textViewCCP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Code postal"
+                android:textSize="14dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/veryLightGrey"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewComm"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Commentaire :"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/textViewCComm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Commentaire"
+                android:textSize="14dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+
+            android:id="@+id/save"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_red"
+            android:clickable="true"
+            android:elevation="6dp"
+            android:text="Enregistrer"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

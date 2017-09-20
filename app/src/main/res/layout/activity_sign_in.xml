@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:id="@+id/r">
+
+    <ImageView
+        android:id="@+id/Splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/logoSplash"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_splk"
+
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/pseudo"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Pseudo"
+            android:inputType="text"
+            android:textColor="#64221b"
+            android:textColorHint="#ffffff"
+            android:textSize="14dp"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#64221b"
+            android:textColorHint="#ffffff"
+            android:textSize="14dp"
+            />
+
+        <EditText
+            android:id="@+id/dateNaissance"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:focusableInTouchMode="false"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Date de naissance"
+            android:inputType="date"
+            android:textColor="#64221b"
+            android:textColorHint="#ffffff"
+            android:textSize="14dp"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:textColor="#64221b"
+            android:textColorHint="#ffffff"
+            android:textSize="14dp"
+           />
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Répéter Mot de passe"
+            android:inputType="textPassword"
+            android:textColor="#64221b"
+            android:textColorHint="#ffffff"
+            android:textSize="14dp"/>
+        <EditText
+            android:id="@+id/CodePostal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Code postal"
+            android:inputType="number"
+            android:textColor="#64221b"
+            android:textColorHint="#ffffff"
+            android:textSize="14dp"
+            />
+        <EditText
+            android:id="@+id/Ville"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Ville"
+            android:inputType="text"
+            android:textColor="#64221b"
+            android:textColorHint="#ffffff"
+            android:textSize="14dp"
+            />
+
+
+
+        <Button
+
+            android:id="@+id/SignUp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_light"
+            android:clickable="true"
+            android:text="Créer compte"
+            android:textAllCaps="false"
+            android:textColor="#232c3d" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:id="@+id/r">
+
+    <ImageView
+        android:id="@+id/Splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/logoSplash"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_splk"
+
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/loginError"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Joueur2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="Email ou mot de passe erroné"
+            android:textAlignment="center"
+            android:textColor="#64221b"
+            android:textColorHint="#ffffff"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Joueur2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:text="toto@mail.com"
+            android:hint="Email / Pseudo"
+            android:inputType="textEmailAddress"
+            android:textColor="#64221b"
+            android:textColorHint="#ffffff"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Play"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:text="1234"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:textColor="#64221b"
+            android:textColorHint="#ffffff"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+
+        <Button
+
+            android:id="@+id/login"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_light"
+            android:clickable="true"
+            android:elevation="6dp"
+            android:text="Connexion"
+            android:textAllCaps="false"
+            android:textColor="#232c3d" />
+
+
+        <Button
+            android:id="@+id/signIn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/input_stroke"
+            android:clickable="true"
+            android:text="Créer un compte"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/abort"
+            android:visibility="gone"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:text="Créer un compte"
+            android:textAllCaps="false"
+            android:textColor="#64221b"
+            android:textSize="12sp"
+            android:layout_weight="0.28" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

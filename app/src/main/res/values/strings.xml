@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">OnSport</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="slogan">Trouver une equipe n\'a jamais été aussi facile</string>
+    <string name="base_line">Une platforme de mise n relation entre joueurs qui veulent partager les frais de location de terrains de sport</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
